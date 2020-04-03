@@ -19,6 +19,7 @@ func ListWinners(res http.ResponseWriter, req *http.Request) {
 		res.WriteHeader(http.StatusInternalServerError)
 		return
 	}
+	res.Write(winner)
 }
 
 // AddNewWinner adds new winner to the list
